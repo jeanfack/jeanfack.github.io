@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        <!--OL { counter-reset: item; padding-left: 10px; }-->
+        LI { display: block }
+        LI:before { content: counters(item, ".") " "; counter-increment: item }
+    </style>
+    
+    <head>
+        <title>sqliteodbc</title>
+    </head>
+    <body>
+        <h1>Comment installer le driver ODBC SQLite sur Windows ?</h1>
+        
+        <ol>
+            <li>
+                Coonfiguration 32 bits:
+                <ol> 
+                    <li>Executer <tt>C:\sqlite_odbc_sample\www.ch-werner.de_sqliteodbc\sqlitodbc.exe</tt>. Cela va installer le driver.</li>
+                    <li>
+                        Executer <tt>C:\Windows\<b><font color="red">syswow64</font></b>\odbcad32.exe</tt>.
+                        <ol> 
+                            <li>Sélectionner l'onglet "Pilotes ODBC".</li>
+                            <li>Vérifier que le pilote "SQLite3 ODBC Driver" est présent.</li>
+                            <li>Cliquer sur "OK".<br><br><img src=".\img\syswow64_odbcad32__Polites_ODBC__OK.png"><br><br></li>
+                        </ol>
+                    </li>
+                </ol> 
+            </li>
+            <li>
+                Coonfiguration 64 bits:
+                <ol> 
+                    <li>
+                        <li>Executer <tt>C:\Windows\<b><font color="red">system32</font></b>\odbcad32.exe</tt>.
+                        <ol> 
+                            <li>Sélectionner l'onglet "Pilotes ODBC".</li>
+                            <li>Vérifier que le pilote "SQLite3 ODBC Driver" est présent.</li>
+                            <li>Cliquer sur "OK".<br><br><img src=".\img\system32_odbcad32__Polites_ODBC__OK.png"><br><br></li>
+                        </ol>
+                    </li>
+                </ol> 
+            </li>
+        </ol>
+        
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        <!--OL { counter-reset: item; padding-left: 10px; }-->
+        LI { display: block }
+        LI:before { content: counters(item, ".") " "; counter-increment: item }
+    </style>
+    
+    <head>
+        <title>sqlite</title>
+    </head>
+    
+    <body>
+        <h1>Comment construire une base de donnée SQLite sur Windows 10 ?</h1>
+        <ol>
+            <li>Lancer <tt>cmd.exe</tt> dans <tt>C:\sqlite_odbc_sample\scripts</tt>.<br><br></li>
+            
+            <li>Executer <tt>ex1.del.cmd</tt>.<br>
+            => Supprime le fichier <tt>ex1.db</tt>.
+            <br><br><img src=".\img\ex1.del.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.new.cmd</tt>.<br>
+            => Crée le fichier <tt>ex1.db</tt> qui contient une base de donnée vide.
+            <br><br><img src=".\img\ex1.new.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.CREATE.cmd</tt>.<br>
+            => Crée la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.CREATE.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.INSERT.cmd</tt>.<br>
+            => Insère 5 enregistrements dans la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.INSERT.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.SELECT.cmd</tt>.<br>
+            => Affiche la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.SELECT.1.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.INSERT.Charlie.Chaplin.cmd</tt>.<br>
+            => Insert un 6-ème enregistrement dans la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.INSERT.Charlie.Chaplin.cmd.png"><br><br></li>
+            
+            <li>Executer <tt>ex1.SELECT.cmd</tt>.<br>
+            => Affiche la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.SELECT.2.cmd.png"><br><br></li>
+
+            <li>Executer <tt>ex1.DELETE.Charlie.Chaplin.cmd</tt>.<br>
+            => Insert un 6-ème enregistrement dans la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.DELETE.Charlie.Chaplin.cmd.png"><br><br></li>
+
+            <li>Executer <tt>ex1.SELECT.cmd</tt>.<br>
+            => Affiche la table <tt>USER</tt>.
+            <br><br><img src=".\img\ex1.SELECT.3.cmd.png"><br><br></li>
+        </ol>
+    </body>
+</html>
