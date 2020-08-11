@@ -1,7 +1,7 @@
 
-## Welcome to GitHub Pages
+# ## Welcome to GitHub Pages
 
-[sqlite_odbc_sample](https://github.com/jeanfack/sqlite_odbc_sample)
+[sqlite_odbc_sample](https://github.com/jeanfack/sqlite_odbc_sample/index.html)
 
 You can use the [editor on GitHub](https://github.com/jeanfack/jeanfack.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
