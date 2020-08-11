@@ -1,7 +1,7 @@
 
 # Welcome to GitHub Pages
 
-## Project
+## My Project
 
 [sqlite_odbc_sample](https://github.com/jeanfack/sqlite_odbc_sample/index.html)
 
